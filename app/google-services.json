@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "457817658743",
+    "firebase_url": "https://bquest-3beb9.firebaseio.com",
+    "project_id": "bquest-3beb9",
+    "storage_bucket": "bquest-3beb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457817658743:android:da4a9b56cd6f7a35",
+        "android_client_info": {
+          "package_name": "com.example.b_quest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457817658743-qre5odgihpvl9jtleakf71n93kn5lefh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.b_quest",
+            "certificate_hash": "15e622c4d6545791f38940c6e96d870b8a8c2ee6"
+          }
+        },
+        {
+          "client_id": "457817658743-t8hs0d6d4ejgajgt39i7c4r1rkra2u4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.b_quest",
+            "certificate_hash": "5c38c89647d5e5731035365b6b3828e9d9725830"
+          }
+        },
+        {
+          "client_id": "457817658743-pecr9bq86ik3136gkq4evces9mb0kp13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXSZFTXs3I72JGccg2JonY0J9xmeEs-dI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457817658743-pecr9bq86ik3136gkq4evces9mb0kp13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

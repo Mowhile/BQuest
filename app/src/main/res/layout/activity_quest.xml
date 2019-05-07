@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/category_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginRight="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/quest_list_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/chief"
+
+            android:textColor="@color/color_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/bQuest_category"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bQuest_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginEnd="8dp"
+
+            android:text="@string/b_quest"
+            android:textAlignment="center"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp"
+            app:fontFamily="@font/chewy"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_1"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left_category"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_top_category" />
+
+        <TextView
+            android:id="@+id/quest_1_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_1"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left_category"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_1" />
+
+        <TextView
+            android:id="@+id/quest_2_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_2"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_3"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left_category"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_2" />
+
+        <TextView
+            android:id="@+id/quest_3_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_3"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_4"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left_category"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_3" />
+
+        <TextView
+            android:id="@+id/quest_4_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_4"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_5"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left_category"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_4" />
+
+        <TextView
+            android:id="@+id/quest_5_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_5"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_6"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left_category"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_5" />
+
+        <Button
+            android:id="@+id/button_quest_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:text="@string/pick_a_quest"
+
+            android:textColor="@color/text_button_color"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_1" />
+
+        <Button
+            android:id="@+id/button_quest_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:text="@string/pick_a_quest"
+
+            android:textColor="@color/text_button_color"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_3"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_2" />
+
+        <Button
+            android:id="@+id/button_quest_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:text="@string/pick_a_quest"
+
+            android:textColor="@color/text_button_color"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_4"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_3" />
+
+        <Button
+            android:id="@+id/button_quest_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:text="@string/pick_a_quest"
+
+            android:textColor="@color/text_button_color"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_5"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_4" />
+
+        <Button
+            android:id="@+id/button_quest_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@drawable/custom_button"
+            android:padding="10dp"
+            android:text="@string/pick_a_quest"
+
+            android:textColor="@color/text_button_color"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_6"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_left_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_right_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_top_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_bottom_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_spinner_constraint_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_spinner_constraint_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_spinner_constraint_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_spinner_constraint_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_spinner_constraint_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_spinner_constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_spinner_constraint_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <Button
+            android:id="@+id/quest_done_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:background="@drawable/custom_button"
+            android:text="@string/done"
+            android:textColor="@color/text_button_color"
+
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom_category"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right_category"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left_category"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_6" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/quest_list_layout"
+        android:layout_width="0dp"
+        android:animateLayoutChanges="true"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_layout">
+
+
+        <TextView
+            android:id="@+id/choose_quest_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:fontFamily="@font/chewy"
+
+            android:text="@string/choose_your_quest"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/scroll"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_top" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/option_done_button"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/choose_quest_text">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+                app:layout_constraintStart_toStartOf="@+id/vertical_left">
+
+                <TextView
+                    android:id="@+id/animals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/animals"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/chewy" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/quest_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/can_i_eat_it"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/kiss_a_dog"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="49dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/does_it_swim"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/miaw"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/feed_the_birds"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/in_the_pub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/in_the_pub"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/chewy" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/quest_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/can_i_eat_it"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/kiss_a_dog"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="49dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/does_it_swim"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/miaw"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/feed_the_birds"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/mall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/mall"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/chewy" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/quest_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/can_i_eat_it"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/kiss_a_dog"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="49dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/does_it_swim"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/miaw"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/feed_the_birds"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/sports"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/chewy" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/quest_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/can_i_eat_it"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/kiss_a_dog"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="49dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/does_it_swim"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/miaw"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/feed_the_birds"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/food"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/chewy" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <RadioButton
+                    android:id="@+id/quest_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/can_i_eat_it"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/kiss_a_dog"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="49dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/does_it_swim"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/miaw"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="170dp" />
+
+                <RadioButton
+                    android:id="@+id/quest_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                    android:text="@string/feed_the_birds"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" />
+
+
+            </RadioGroup>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/option_done_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_button"
+            android:enabled="false"
+            android:text="@string/done"
+            android:textColor="@color/text_button_color"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

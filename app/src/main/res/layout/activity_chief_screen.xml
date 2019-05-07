@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_spinner_constraint_4"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_spinner_constraint_4">
+
+        <include
+            layout="@layout/chief_navigation_action"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"/>
+
+        <TextView
+            android:id="@+id/tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="32dp"
+
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="8dp"
+
+            android:text="@string/chief"
+            android:textColor="@color/color_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/bQuest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/bQuest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+
+            android:layout_marginTop="24dp"
+
+            android:layout_marginEnd="8dp"
+            android:text="@string/b_quest"
+            android:textAlignment="center"
+            android:textColor="#0079AA"
+            android:textSize="50sp"
+            app:fontFamily="@font/chewy"
+            app:layout_constraintBottom_toTopOf="@+id/quest_name_preview"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_top" />
+
+        <TextView
+            android:id="@+id/quest_name_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:fontFamily="@font/chewy"
+
+            android:text="@string/treasure_hunt_name"
+            android:textAlignment="center"
+            android:textColor="#0079AA"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/bQuest" />
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@drawable/ic_menu_share"
+            android:text=""
+
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/bQuest" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/quest_name_preview" />
+
+        <TextView
+            android:id="@+id/approve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:text="@string/mark_as_completed"
+            android:textAlignment="center"
+            android:textColor="#0079AA"
+            android:textSize="18sp"
+
+            app:fontFamily="@font/chewy"
+            app:layout_constraintBottom_toTopOf="@+id/switch_quest1"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <TextView
+            android:id="@+id/quest_preview_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:text="@string/quests"
+            android:textAlignment="center"
+            android:textColor="#0079AA"
+            android:textSize="18sp"
+            app:fontFamily="@font/chewy"
+            app:layout_constraintBottom_toTopOf="@+id/quest_one_text_preview"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+
+        <Button
+            android:id="@+id/accept_approval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/chief_custom_button"
+            android:text="@string/approve"
+            android:textColor="@color/text_button_color"
+            app:layout_constraintBottom_toTopOf="@+id/chief_chat_button"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/switch_quest5" />
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10218978" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_spinner_constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <TextView
+            android:id="@+id/quest_one_text_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_1_text_preview"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/quest_two_text_preview"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/quest_preview_text" />
+
+        <TextView
+            android:id="@+id/quest_two_text_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_2_text_preview"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/quest_three_text_preview"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/quest_one_text_preview" />
+
+        <TextView
+            android:id="@+id/quest_three_text_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_3_text_preview"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/quest_four_text_preview"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/quest_two_text_preview" />
+
+        <TextView
+            android:id="@+id/quest_four_text_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/quest_4_text_preview"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/quest_five_text_preview"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/quest_three_text_preview" />
+
+
+        <TextView
+            android:id="@+id/quest_five_text_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/quest_5_text_preview"
+            android:textAlignment="center"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/accept_approval"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/quest_four_text_preview" />
+
+
+        <Switch
+            android:id="@+id/switch_quest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/switch_quest2"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/approve" />
+
+        <Switch
+            android:id="@+id/switch_quest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/switch_quest3"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/switch_quest1" />
+
+        <Switch
+            android:id="@+id/switch_quest3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/switch_quest4"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/switch_quest2" />
+
+        <Switch
+            android:id="@+id/switch_quest4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/switch_quest5"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/switch_quest3" />
+
+        <Switch
+            android:id="@+id/switch_quest5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/accept_approval"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_spinner_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/switch_quest4" />
+
+        <Button
+            android:id="@+id/chief_chat_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/chief_button_style"
+            android:textColor="#ffff"
+            android:text="@string/chat"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/accept_approval" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation"
+        android:layout_gravity ="start"
+        app:headerLayout="@layout/header">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

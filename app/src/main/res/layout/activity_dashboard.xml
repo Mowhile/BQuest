@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:background="@color/colorAccent">
+
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+        <include
+            layout="@layout/navigation_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="4dp"/>
+
+        <TextView
+            android:id="@+id/bQuest2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:text="@string/b_quest"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textSize="50sp"
+            app:fontFamily="@font/chewy"
+            app:layout_constraintBottom_toTopOf="@+id/create_th_button"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toTopOf="@id/horizontal_top" />
+
+        <Button
+            android:id="@+id/create_th_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:background="@drawable/custom_button"
+            android:text="@string/create_treasure_hunt"
+            android:textColor="@color/text_button_color"
+
+            app:layout_constraintBottom_toTopOf="@+id/list_treasure_button"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/bQuest2" />
+
+        <Button
+            android:id="@+id/list_treasure_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:background="@drawable/custom_button"
+            android:text="@string/my_treasure_hunts"
+            android:textColor="@color/text_button_color"
+
+            app:layout_constraintBottom_toTopOf="@+id/tutorialButton"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/create_th_button" />
+
+        <Button
+            android:id="@+id/tutorialButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:background="@drawable/custom_button"
+            android:text="@string/watch_our_tutorial"
+            android:textColor="@color/text_button_color"
+
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintStart_toStartOf="@+id/vertical_left"
+            app:layout_constraintTop_toBottomOf="@+id/list_treasure_button" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text=""
+            android:textColor="@color/color_black"
+
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_top"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_right"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9026764" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation"
+        android:layout_gravity ="start"
+        app:headerLayout="@layout/header">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

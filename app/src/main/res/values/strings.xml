@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">BHero</string>
+    <string name="b_quest">B-Quest</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="sign_up">sign-up</string>
+    <string name="b_quest_logo">b_quest_logo</string>
+    <string name="or_sign_with">OR SIGN IN WITH</string>
+    <string name="cancel">Cancel</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="userName">Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="submit">Submit</string>
+    <string name="accept">Accept</string>
+    <string name="terms_conditions"><![CDATA[Terms&Conditions]]></string>
+    <string name="sign_in">Sign-in</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="place_holder2">place_holder2</string>
+    <string name="place_holder1">place_holder1</string>
+    <string name="logout">Logout</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="create_treasure_hunt">Create Treasure Hunt</string>
+    <string name="my_treasure_hunts">My Treasure Hunts</string>
+    <string name="watch_our_tutorial">Watch our tutorials</string>
+    <string name="chief">Chief</string>
+    <string name="treasure_hunt_name">Treasure hunt name</string>
+    <string name="go_back">Go Back</string>
+    <string name="euro">€</string>
+    <string name="choose_the_hunt_s_quests">Choose the hunt\'s quests</string>
+    <string name="go_back_arrow"><![CDATA[<]]></string>
+    <string name="quest_1">Quest 1</string>
+    <string name="quest_2">Quest 2</string>
+    <string name="quest_3">Quest 3</string>
+    <string name="quest_4">Quest 4</string>
+    <string name="done">DONE</string>
+    <string name="create">CREATE</string>
+    <string name="quests">QUESTS</string>
+    <string name="participants">Participants</string>
+    <string name="status">Status</string>
+    <string name="completed">Completed</string>
+    <string name="settings">Settings</string>
+    <string name="pictures">Pictures</string>
+    <string name="link">Link</string>
+    <string name="chat">CHAT</string>
+    <string name="abandon_th">Abandon TH</string>
+    <string name="photos">Photos</string>
+    <string name="first_name">First Name</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Password is too short or does not match</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="hero_s_email">Hero\'s email</string>
+    <string name="choose_your_hero">Choose your hero</string>
+    <string name="hero_s_name">Hero\'s name</string>
+    <string name="kiss_a_dog">Kiss a dog</string>
+    <string name="can_i_eat_it">Can i eat it?</string>
+    <string name="does_it_swim">Does it swim?</string>
+    <string name="in_the_pub">In the pub</string>
+    <string name="drink_a_pint">Drink a pint</string>
+    <string name="drink_2_pints">Drink 2 pints</string>
+    <string name="drink_3_pints">Drink 3 pints</string>
+    <string name="drink_4_pints">Drink 4 pints</string>
+    <string name="drink_5_pints">Drink 5 pints</string>
+    <string name="pick_a_quest">Pick a quest</string>
+    <string name="feed_the_birds">Feed the birds</string>
+    <string name="miaw">Miaw</string>
+    <string name="choose_your_quest">Choose your quest</string>
+    <string name="animals">Animals</string>
+    <string name="food">Food</string>
+    <string name="sports">Sports</string>
+    <string name="quest_1_text_preview">quest_1_text_preview</string>
+    <string name="quest_2_text_preview">quest_2_text_preview</string>
+    <string name="quest_3_text_preview">quest_3_text_preview</string>
+    <string name="quest_4_text_preview">quest_4_text_preview</string>
+    <string name="quest_5_text_preview">quest_5_text_preview</string>
+    <string name="quest_5">Quest 5</string>
+    <string name="mall">Mall</string>
+    <string name="ok_option">That\'s OK!</string>
+    <string name="ok">OK</string>
+    <string name="add_more_option">Add quest!</string>
+    <string name ="treasure_hunt_name_error">You must give a name for your treasure hunt</string>
+    <string name="hero_name_error">What is your hero\'s name?</string>
+    <string name="hero_email_error">We need your hero\'s email</string>
+    <string name="contribution_error">Choose a contribution</string>
+    <string name="lord_email">Lord email</string>
+    <string name="add_lords">Add lords</string>
+    <string name="in_progress">In progress</string>
+    <string name="participant_1_preview">participant_1_preview</string>
+    <string name="participant_2_preview">participant_2_preview</string>
+    <string name="participant_3_preview">participant_3_preview</string>
+    <string name="participant_4_preview">participant_4_preview</string>
+    <string name="mark_as_completed">Mark as completed</string>
+    <string name="approve">Approve</string>
+    <string name="lord">Lord</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="message">message</string>
+
+    <string-array name="contribution">
+        <item>Contribution</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+</resources>

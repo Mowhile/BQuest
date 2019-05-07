@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.b_quest">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".QuestActivity"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".SignUpActivity"
+                  android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".SignInActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity
+            android:name=".DashboardActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity
+            android:name=".CreateTreasureHuntActivity"
+            >
+        </activity>
+        <activity android:name=".MyTreasureHuntActivity" />
+        <activity android:name=".Splash" />
+        <activity android:name=".ChiefDisplayActivity" />
+        <activity android:name=".ShowImageActivity" />
+        <activity android:name=".AddLordActivity" />
+        <activity android:name=".LordScreenActivity" />
+        <activity android:name=".PreviewActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".Help" />
+        <activity android:name=".Hero" />
+        <activity android:name=".HeroUpload1" />
+        <activity android:name=".HeroUpload2" />
+        <activity android:name=".HeroUpload3" />
+        <activity android:name=".HeroUpload4" />
+        <activity android:name=".HeroUpload5" />
+        <activity android:name=".ImageActivity3" />
+        <activity android:name=".ImagesActivity" />
+        <activity android:name=".ImagesActivity2" />
+        <activity android:name=".ImagesActivity4" />
+        <activity android:name=".ImagesActivity5" />
+        <activity android:name=".MyProfile2" />
+        <activity android:name=".Settings" />
+        <activity android:name=".AboutUs" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
